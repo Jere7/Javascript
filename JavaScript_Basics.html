@@ -1,0 +1,60 @@
+<html>
+    <meta>
+        <title>Practicas de JavaScript</title>
+        <script type="text/Javascript">
+            // Arrays
+            // var car1 = "Audi";
+            // var car2 = "Volvo";
+            // var car3 = "BMW";
+
+            
+
+            // var cars= ["BMW","Volvo","Audi"];
+            // cars.push("Tesla");
+            // for (var i = 0; i<4; i++)
+            // {
+            // document.write("<h1>"+cars[i]+"</h1>");
+            // }  
+        //    An Object
+            // var Car = {
+            //     car_brand : "Tesla",
+            //     car_model : "Model 3",
+            //     price : 35000,
+
+            //     teslaAutoPilot : function() 
+            //     {
+            //         return ("<h2>This car has Auto Pilot</h2>");     
+            //     }
+            // }
+                
+            // document.write("<h2>"+Car.teslaAutoPilot()+"</h2>");    
+               
+                function Cars(car_brand, car_model, price) 
+                {
+                    this.car_brand = car_brand;
+                    this.car_model = car_model;
+                    this.price = price;
+                    this.teslaAutoPilot = function()
+                    {
+                        document.write("<h1>Yes This Car Has Auto Pilot</h1>");
+                    }
+                }
+                var c1 = new Cars("Tesla", "Model 3", 35000);
+                var c2 = new Cars("Tesla", "Model P", 45000);
+                c1.teslaAutoPilot();
+                document.write("<h2>"+ c1.car_brand +"</h2>");
+                document.write("<h2>"+ c1.car_model +"</h2>");
+                document.write("<h2>"+ c1.price +"</h2>");
+                document.write("<h2>"+ c2.car_brand +"</h2>");
+                document.write("<h2>"+ c2.car_model +"</h2>");
+                document.write("<h2>"+ c2.price +"</h2>");
+
+        </script>
+    </meta>
+    <body>
+        <p id="demo">JavaScript can change HTML content.</p>
+
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+    </body>
+</html>
